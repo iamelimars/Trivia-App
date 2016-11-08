@@ -1,506 +1,1216 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		882A15191DD183B2006A95DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15181DD183B2006A95DA /* main.m */; };
-		882A151C1DD183B2006A95DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A151B1DD183B2006A95DA /* AppDelegate.m */; };
-		882A151F1DD183B2006A95DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A151E1DD183B2006A95DA /* ViewController.m */; };
-		882A15221DD183B2006A95DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882A15201DD183B2006A95DA /* Main.storyboard */; };
-		882A15251DD183B2006A95DA /* Trivia_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 882A15231DD183B2006A95DA /* Trivia_App.xcdatamodeld */; };
-		882A15271DD183B2006A95DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882A15261DD183B2006A95DA /* Assets.xcassets */; };
-		882A152A1DD183B2006A95DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882A15281DD183B2006A95DA /* LaunchScreen.storyboard */; };
-		882A15351DD183B3006A95DA /* Trivia_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15341DD183B3006A95DA /* Trivia_AppTests.m */; };
-		882A15441DD186AD006A95DA /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15431DD186AD006A95DA /* Questions.m */; };
-		882A15471DD19AC6006A95DA /* FetchQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15461DD19AC6006A95DA /* FetchQuiz.m */; };
-		882A154B1DD1AEA1006A95DA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A154A1DD1AEA1006A95DA /* Constants.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		882A15311DD183B3006A95DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 882A150C1DD183B1006A95DA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 882A15131DD183B2006A95DA;
-			remoteInfo = "Trivia-App";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		882A15141DD183B2006A95DA /* Trivia-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trivia-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		882A15181DD183B2006A95DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		882A151A1DD183B2006A95DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		882A151B1DD183B2006A95DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		882A151D1DD183B2006A95DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		882A151E1DD183B2006A95DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		882A15211DD183B2006A95DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		882A15241DD183B2006A95DA /* Trivia_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Trivia_App.xcdatamodel; sourceTree = "<group>"; };
-		882A15261DD183B2006A95DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		882A15291DD183B2006A95DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		882A152B1DD183B2006A95DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882A15301DD183B3006A95DA /* Trivia-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trivia-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		882A15341DD183B3006A95DA /* Trivia_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trivia_AppTests.m; sourceTree = "<group>"; };
-		882A15361DD183B3006A95DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		882A15421DD186AD006A95DA /* Questions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
-		882A15431DD186AD006A95DA /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
-		882A15451DD19AC6006A95DA /* FetchQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchQuiz.h; sourceTree = "<group>"; };
-		882A15461DD19AC6006A95DA /* FetchQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchQuiz.m; sourceTree = "<group>"; };
-		882A154A1DD1AEA1006A95DA /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		882A154C1DD1B219006A95DA /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		882A15111DD183B2006A95DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		882A152D1DD183B3006A95DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		882A150B1DD183B1006A95DA = {
-			isa = PBXGroup;
-			children = (
-				882A15161DD183B2006A95DA /* Trivia-App */,
-				882A15331DD183B3006A95DA /* Trivia-AppTests */,
-				882A15151DD183B2006A95DA /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		882A15151DD183B2006A95DA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				882A15141DD183B2006A95DA /* Trivia-App.app */,
-				882A15301DD183B3006A95DA /* Trivia-AppTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		882A15161DD183B2006A95DA /* Trivia-App */ = {
-			isa = PBXGroup;
-			children = (
-				882A151A1DD183B2006A95DA /* AppDelegate.h */,
-				882A151B1DD183B2006A95DA /* AppDelegate.m */,
-				882A15411DD1868F006A95DA /* Model */,
-				882A15401DD18688006A95DA /* View */,
-				882A153F1DD18680006A95DA /* Controller */,
-				882A15201DD183B2006A95DA /* Main.storyboard */,
-				882A15261DD183B2006A95DA /* Assets.xcassets */,
-				882A15281DD183B2006A95DA /* LaunchScreen.storyboard */,
-				882A152B1DD183B2006A95DA /* Info.plist */,
-				882A15231DD183B2006A95DA /* Trivia_App.xcdatamodeld */,
-				882A15171DD183B2006A95DA /* Supporting Files */,
-			);
-			path = "Trivia-App";
-			sourceTree = "<group>";
-		};
-		882A15171DD183B2006A95DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				882A15181DD183B2006A95DA /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		882A15331DD183B3006A95DA /* Trivia-AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				882A15341DD183B3006A95DA /* Trivia_AppTests.m */,
-				882A15361DD183B3006A95DA /* Info.plist */,
-			);
-			path = "Trivia-AppTests";
-			sourceTree = "<group>";
-		};
-		882A153F1DD18680006A95DA /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				882A151D1DD183B2006A95DA /* ViewController.h */,
-				882A151E1DD183B2006A95DA /* ViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
-		882A15401DD18688006A95DA /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		882A15411DD1868F006A95DA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				882A15481DD1AE60006A95DA /* Questions */,
-				882A15491DD1AE6A006A95DA /* FetchQuiz */,
-				882A154A1DD1AEA1006A95DA /* Constants.m */,
-				882A154C1DD1B219006A95DA /* Constants.h */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		882A15481DD1AE60006A95DA /* Questions */ = {
-			isa = PBXGroup;
-			children = (
-				882A15421DD186AD006A95DA /* Questions.h */,
-				882A15431DD186AD006A95DA /* Questions.m */,
-			);
-			name = Questions;
-			sourceTree = "<group>";
-		};
-		882A15491DD1AE6A006A95DA /* FetchQuiz */ = {
-			isa = PBXGroup;
-			children = (
-				882A15451DD19AC6006A95DA /* FetchQuiz.h */,
-				882A15461DD19AC6006A95DA /* FetchQuiz.m */,
-			);
-			name = FetchQuiz;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		882A15131DD183B2006A95DA /* Trivia-App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 882A15391DD183B3006A95DA /* Build configuration list for PBXNativeTarget "Trivia-App" */;
-			buildPhases = (
-				882A15101DD183B2006A95DA /* Sources */,
-				882A15111DD183B2006A95DA /* Frameworks */,
-				882A15121DD183B2006A95DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Trivia-App";
-			productName = "Trivia-App";
-			productReference = 882A15141DD183B2006A95DA /* Trivia-App.app */;
-			productType = "com.apple.product-type.application";
-		};
-		882A152F1DD183B3006A95DA /* Trivia-AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 882A153C1DD183B3006A95DA /* Build configuration list for PBXNativeTarget "Trivia-AppTests" */;
-			buildPhases = (
-				882A152C1DD183B3006A95DA /* Sources */,
-				882A152D1DD183B3006A95DA /* Frameworks */,
-				882A152E1DD183B3006A95DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				882A15321DD183B3006A95DA /* PBXTargetDependency */,
-			);
-			name = "Trivia-AppTests";
-			productName = "Trivia-AppTests";
-			productReference = 882A15301DD183B3006A95DA /* Trivia-AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		882A150C1DD183B1006A95DA /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = Marshall;
-				TargetAttributes = {
-					882A15131DD183B2006A95DA = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 7FJN59S36F;
-						ProvisioningStyle = Automatic;
-					};
-					882A152F1DD183B3006A95DA = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 7FJN59S36F;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 882A15131DD183B2006A95DA;
-					};
-				};
-			};
-			buildConfigurationList = 882A150F1DD183B1006A95DA /* Build configuration list for PBXProject "Trivia-App" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 882A150B1DD183B1006A95DA;
-			productRefGroup = 882A15151DD183B2006A95DA /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				882A15131DD183B2006A95DA /* Trivia-App */,
-				882A152F1DD183B3006A95DA /* Trivia-AppTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		882A15121DD183B2006A95DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				882A152A1DD183B2006A95DA /* LaunchScreen.storyboard in Resources */,
-				882A15271DD183B2006A95DA /* Assets.xcassets in Resources */,
-				882A15221DD183B2006A95DA /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		882A152E1DD183B3006A95DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		882A15101DD183B2006A95DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				882A151F1DD183B2006A95DA /* ViewController.m in Sources */,
-				882A15471DD19AC6006A95DA /* FetchQuiz.m in Sources */,
-				882A151C1DD183B2006A95DA /* AppDelegate.m in Sources */,
-				882A15441DD186AD006A95DA /* Questions.m in Sources */,
-				882A15251DD183B2006A95DA /* Trivia_App.xcdatamodeld in Sources */,
-				882A154B1DD1AEA1006A95DA /* Constants.m in Sources */,
-				882A15191DD183B2006A95DA /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		882A152C1DD183B3006A95DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				882A15351DD183B3006A95DA /* Trivia_AppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		882A15321DD183B3006A95DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 882A15131DD183B2006A95DA /* Trivia-App */;
-			targetProxy = 882A15311DD183B3006A95DA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		882A15201DD183B2006A95DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				882A15211DD183B2006A95DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		882A15281DD183B2006A95DA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				882A15291DD183B2006A95DA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		882A15371DD183B3006A95DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		882A15381DD183B3006A95DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		882A153A1DD183B3006A95DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7FJN59S36F;
-				INFOPLIST_FILE = "Trivia-App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EliMarsh.Trivia-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		882A153B1DD183B3006A95DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7FJN59S36F;
-				INFOPLIST_FILE = "Trivia-App/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EliMarsh.Trivia-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		882A153D1DD183B3006A95DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7FJN59S36F;
-				INFOPLIST_FILE = "Trivia-AppTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EliMarsh.Trivia-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trivia-App.app/Trivia-App";
-			};
-			name = Debug;
-		};
-		882A153E1DD183B3006A95DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 7FJN59S36F;
-				INFOPLIST_FILE = "Trivia-AppTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.EliMarsh.Trivia-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trivia-App.app/Trivia-App";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		882A150F1DD183B1006A95DA /* Build configuration list for PBXProject "Trivia-App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				882A15371DD183B3006A95DA /* Debug */,
-				882A15381DD183B3006A95DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		882A15391DD183B3006A95DA /* Build configuration list for PBXNativeTarget "Trivia-App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				882A153A1DD183B3006A95DA /* Debug */,
-				882A153B1DD183B3006A95DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		882A153C1DD183B3006A95DA /* Build configuration list for PBXNativeTarget "Trivia-AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				882A153D1DD183B3006A95DA /* Debug */,
-				882A153E1DD183B3006A95DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		882A15231DD183B2006A95DA /* Trivia_App.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				882A15241DD183B2006A95DA /* Trivia_App.xcdatamodel */,
-			);
-			currentVersion = 882A15241DD183B2006A95DA /* Trivia_App.xcdatamodel */;
-			path = Trivia_App.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
-	};
-	rootObject = 882A150C1DD183B1006A95DA /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>071A107F253EB2D639972FA7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Trivia-App.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Trivia-App/Pods-Trivia-App.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4538B42B11DA05916A062388</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-Trivia-App.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7869A45DAEBC0983B7EDA773</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4538B42B11DA05916A062388</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A150B1DD183B1006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15161DD183B2006A95DA</string>
+				<string>882A15331DD183B3006A95DA</string>
+				<string>882A15151DD183B2006A95DA</string>
+				<string>EF0CD5EE002DB17F0646D8A5</string>
+				<string>AD54DB3E8801A39F7C6BB501</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A150C1DD183B1006A95DA</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0810</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Marshall</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>882A15131DD183B2006A95DA</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>7FJN59S36F</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+					</dict>
+					<key>882A152F1DD183B3006A95DA</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>8.1</string>
+						<key>DevelopmentTeam</key>
+						<string>7FJN59S36F</string>
+						<key>ProvisioningStyle</key>
+						<string>Automatic</string>
+						<key>TestTargetID</key>
+						<string>882A15131DD183B2006A95DA</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>882A150F1DD183B1006A95DA</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>882A150B1DD183B1006A95DA</string>
+			<key>productRefGroup</key>
+			<string>882A15151DD183B2006A95DA</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>882A15131DD183B2006A95DA</string>
+				<string>882A152F1DD183B3006A95DA</string>
+			</array>
+		</dict>
+		<key>882A150F1DD183B1006A95DA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>882A15371DD183B3006A95DA</string>
+				<string>882A15381DD183B3006A95DA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>882A15101DD183B2006A95DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>882A151F1DD183B2006A95DA</string>
+				<string>882A15471DD19AC6006A95DA</string>
+				<string>882A151C1DD183B2006A95DA</string>
+				<string>882A15441DD186AD006A95DA</string>
+				<string>882A15251DD183B2006A95DA</string>
+				<string>882A154B1DD1AEA1006A95DA</string>
+				<string>882A15191DD183B2006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>882A15111DD183B2006A95DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>7869A45DAEBC0983B7EDA773</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>882A15121DD183B2006A95DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>882A152A1DD183B2006A95DA</string>
+				<string>882A15271DD183B2006A95DA</string>
+				<string>882A15221DD183B2006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>882A15131DD183B2006A95DA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>882A15391DD183B3006A95DA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>FDAE89B30533AD67775F03A2</string>
+				<string>882A15101DD183B2006A95DA</string>
+				<string>882A15111DD183B2006A95DA</string>
+				<string>882A15121DD183B2006A95DA</string>
+				<string>F4DEFB93DEF27D54FB86CD08</string>
+				<string>E3A8C4B8893632F507A81FB0</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Trivia-App</string>
+			<key>productName</key>
+			<string>Trivia-App</string>
+			<key>productReference</key>
+			<string>882A15141DD183B2006A95DA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>882A15141DD183B2006A95DA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Trivia-App.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>882A15151DD183B2006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15141DD183B2006A95DA</string>
+				<string>882A15301DD183B3006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15161DD183B2006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A151A1DD183B2006A95DA</string>
+				<string>882A151B1DD183B2006A95DA</string>
+				<string>882A15411DD1868F006A95DA</string>
+				<string>882A15401DD18688006A95DA</string>
+				<string>882A153F1DD18680006A95DA</string>
+				<string>882A15201DD183B2006A95DA</string>
+				<string>882A15261DD183B2006A95DA</string>
+				<string>882A15281DD183B2006A95DA</string>
+				<string>882A152B1DD183B2006A95DA</string>
+				<string>882A15231DD183B2006A95DA</string>
+				<string>882A15171DD183B2006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Trivia-App</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15171DD183B2006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15181DD183B2006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15181DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15191DD183B2006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15181DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A151A1DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A151B1DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A151C1DD183B2006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A151B1DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A151D1DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A151E1DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A151F1DD183B2006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A151E1DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A15201DD183B2006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15211DD183B2006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15211DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15221DD183B2006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15201DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A15231DD183B2006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15241DD183B2006A95DA</string>
+			</array>
+			<key>currentVersion</key>
+			<string>882A15241DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>XCVersionGroup</string>
+			<key>path</key>
+			<string>Trivia_App.xcdatamodeld</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>versionGroupType</key>
+			<string>wrapper.xcdatamodel</string>
+		</dict>
+		<key>882A15241DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.xcdatamodel</string>
+			<key>path</key>
+			<string>Trivia_App.xcdatamodel</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15251DD183B2006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15231DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A15261DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15271DD183B2006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15261DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A15281DD183B2006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15291DD183B2006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15291DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A152A1DD183B2006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15281DD183B2006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A152B1DD183B2006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A152C1DD183B3006A95DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>882A15351DD183B3006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>882A152D1DD183B3006A95DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>882A152E1DD183B3006A95DA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>882A152F1DD183B3006A95DA</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>882A153C1DD183B3006A95DA</string>
+			<key>buildPhases</key>
+			<array>
+				<string>882A152C1DD183B3006A95DA</string>
+				<string>882A152D1DD183B3006A95DA</string>
+				<string>882A152E1DD183B3006A95DA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>882A15321DD183B3006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Trivia-AppTests</string>
+			<key>productName</key>
+			<string>Trivia-AppTests</string>
+			<key>productReference</key>
+			<string>882A15301DD183B3006A95DA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>882A15301DD183B3006A95DA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Trivia-AppTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>882A15311DD183B3006A95DA</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>882A150C1DD183B1006A95DA</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>882A15131DD183B2006A95DA</string>
+			<key>remoteInfo</key>
+			<string>Trivia-App</string>
+		</dict>
+		<key>882A15321DD183B3006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>882A15131DD183B2006A95DA</string>
+			<key>targetProxy</key>
+			<string>882A15311DD183B3006A95DA</string>
+		</dict>
+		<key>882A15331DD183B3006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15341DD183B3006A95DA</string>
+				<string>882A15361DD183B3006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Trivia-AppTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15341DD183B3006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Trivia_AppTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15351DD183B3006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15341DD183B3006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A15361DD183B3006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15371DD183B3006A95DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>882A15381DD183B3006A95DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INFINITE_RECURSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.1</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>882A15391DD183B3006A95DA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>882A153A1DD183B3006A95DA</string>
+				<string>882A153B1DD183B3006A95DA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>882A153A1DD183B3006A95DA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DE23C96E5929C7BF9D7B9830</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>7FJN59S36F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Trivia-App/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.EliMarsh.Trivia-App</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>882A153B1DD183B3006A95DA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>071A107F253EB2D639972FA7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>7FJN59S36F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Trivia-App/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.EliMarsh.Trivia-App</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>882A153C1DD183B3006A95DA</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>882A153D1DD183B3006A95DA</string>
+				<string>882A153E1DD183B3006A95DA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>882A153D1DD183B3006A95DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>7FJN59S36F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Trivia-AppTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.EliMarsh.Trivia-AppTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Trivia-App.app/Trivia-App</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>882A153E1DD183B3006A95DA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>7FJN59S36F</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Trivia-AppTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.EliMarsh.Trivia-AppTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Trivia-App.app/Trivia-App</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>882A153F1DD18680006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A151D1DD183B2006A95DA</string>
+				<string>882A151E1DD183B2006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Controller</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15401DD18688006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15411DD1868F006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15481DD1AE60006A95DA</string>
+				<string>882A15491DD1AE6A006A95DA</string>
+				<string>882A154D1DD1B519006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15421DD186AD006A95DA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Questions.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15431DD186AD006A95DA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Questions.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15441DD186AD006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15431DD186AD006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A15451DD19AC6006A95DA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>FetchQuiz.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15461DD19AC6006A95DA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>FetchQuiz.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15471DD19AC6006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A15461DD19AC6006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A15481DD1AE60006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15421DD186AD006A95DA</string>
+				<string>882A15431DD186AD006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Questions</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A15491DD1AE6A006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A15451DD19AC6006A95DA</string>
+				<string>882A15461DD19AC6006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>FetchQuiz</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A154A1DD1AEA1006A95DA</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Constants.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A154B1DD1AEA1006A95DA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>882A154A1DD1AEA1006A95DA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>882A154C1DD1B219006A95DA</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Constants.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>882A154D1DD1B519006A95DA</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>882A154A1DD1AEA1006A95DA</string>
+				<string>882A154C1DD1B219006A95DA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Constants</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD54DB3E8801A39F7C6BB501</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4538B42B11DA05916A062388</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DE23C96E5929C7BF9D7B9830</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Trivia-App.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Trivia-App/Pods-Trivia-App.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E3A8C4B8893632F507A81FB0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Trivia-App/Pods-Trivia-App-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>EF0CD5EE002DB17F0646D8A5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DE23C96E5929C7BF9D7B9830</string>
+				<string>071A107F253EB2D639972FA7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F4DEFB93DEF27D54FB86CD08</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Trivia-App/Pods-Trivia-App-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>FDAE89B30533AD67775F03A2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>882A150C1DD183B1006A95DA</string>
+</dict>
+</plist>

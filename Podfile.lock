@@ -1,0 +1,10 @@
+PODS:
+  - IGLDropDownMenu (1.6.2)
+
+DEPENDENCIES:
+  - IGLDropDownMenu
+
+SPEC CHECKSUMS:
+  IGLDropDownMenu: ae118618ae858fa66ce7c2ac80ed9124a710b228
+
+COCOAPODS: 0.39.0

@@ -17,6 +17,7 @@
 		882A15351DD183B3006A95DA /* Trivia_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15341DD183B3006A95DA /* Trivia_AppTests.m */; };
 		882A15441DD186AD006A95DA /* Questions.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15431DD186AD006A95DA /* Questions.m */; };
 		882A15471DD19AC6006A95DA /* FetchQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15461DD19AC6006A95DA /* FetchQuiz.m */; };
+		882A154B1DD1AEA1006A95DA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A154A1DD1AEA1006A95DA /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		882A15431DD186AD006A95DA /* Questions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Questions.m; sourceTree = "<group>"; };
 		882A15451DD19AC6006A95DA /* FetchQuiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchQuiz.h; sourceTree = "<group>"; };
 		882A15461DD19AC6006A95DA /* FetchQuiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchQuiz.m; sourceTree = "<group>"; };
+		882A154A1DD1AEA1006A95DA /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		882A154C1DD1B219006A95DA /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,12 +143,30 @@
 		882A15411DD1868F006A95DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				882A15481DD1AE60006A95DA /* Questions */,
+				882A15491DD1AE6A006A95DA /* FetchQuiz */,
+				882A154A1DD1AEA1006A95DA /* Constants.m */,
+				882A154C1DD1B219006A95DA /* Constants.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		882A15481DD1AE60006A95DA /* Questions */ = {
+			isa = PBXGroup;
+			children = (
 				882A15421DD186AD006A95DA /* Questions.h */,
 				882A15431DD186AD006A95DA /* Questions.m */,
+			);
+			name = Questions;
+			sourceTree = "<group>";
+		};
+		882A15491DD1AE6A006A95DA /* FetchQuiz */ = {
+			isa = PBXGroup;
+			children = (
 				882A15451DD19AC6006A95DA /* FetchQuiz.h */,
 				882A15461DD19AC6006A95DA /* FetchQuiz.m */,
 			);
-			name = Model;
+			name = FetchQuiz;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +278,7 @@
 				882A151C1DD183B2006A95DA /* AppDelegate.m in Sources */,
 				882A15441DD186AD006A95DA /* Questions.m in Sources */,
 				882A15251DD183B2006A95DA /* Trivia_App.xcdatamodeld in Sources */,
+				882A154B1DD1AEA1006A95DA /* Constants.m in Sources */,
 				882A15191DD183B2006A95DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,4 +10,9 @@
 
 @interface QuizParamaters : NSObject
 
+@property (nonatomic) NSString *numberOfQuestions;
+@property (nonatomic) NSString *category;
+@property (nonatomic) NSString *difficulty;
+@property (nonatomic) NSString *quizType; //Multiple Choice or True/False
+
 @end

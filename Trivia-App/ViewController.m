@@ -30,6 +30,13 @@
     self.activityIndicatorView = [[DGActivityIndicatorView alloc]initWithType:DGActivityIndicatorAnimationTypeBallPulse tintColor:[UIColor whiteColor]];
     self.activityIndicatorView.frame = CGRectMake((self.view.frame.size.width / 2) - 25, (self.view.frame.size.height) * .75, 50.0, 50.0);
     
+    [self difficultyDropDown];
+    
+}
+
+#pragma mark - IGLDropDownMenuSetup
+
+-(void)difficultyDropDown {
     
     //Drop down menu setup
     self.dropDownMenu = self.defaultDropDownMenu;
@@ -54,6 +61,7 @@
     [self.view addSubview:self.defaultDropDownMenu];
     
     [self.defaultDropDownMenu reloadView];
+
     
 }
 
@@ -78,6 +86,8 @@
     
     [self.startQuizButton addSubview:self.activityIndicatorView];
     
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    dispatch_queue_t jsonQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
         [UIView transitionWithView:self.startQuizButton duration:1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
             
@@ -93,17 +103,20 @@
                 
                 [self.activityIndicatorView startAnimating];
                 
+                
                 //Fetching Quiz
-                [self.fetchQuiz fetchFeedwithAmount:12 category:9 difficulty:DIFFICULTY_MEDIUM questionType:QUIZ_TYPE_MULTIPLE session:self.session completion:^(NSDictionary *responseDict) {
+                dispatch_async(jsonQueue, ^{
                     
-                    self.questionsArray = [self.fetchQuiz parseJsonWithDictionary:responseDict];
-                    Questions *question = [[Questions alloc]init];
-                    question = self.questionsArray[0];
-                    NSLog(@"%@", question.category);
-                    [self.activityIndicatorView stopAnimating];
-                }];
-                
-                
+                    [self.fetchQuiz fetchFeedwithAmount:12 category:9 difficulty:DIFFICULTY_MEDIUM questionType:QUIZ_TYPE_MULTIPLE session:self.session completion:^(NSDictionary *responseDict) {
+                        self.questionsArray = [self.fetchQuiz parseJsonWithDictionary:responseDict];
+                        Questions *question = [[Questions alloc]init];
+                        question = self.questionsArray[0];
+                        NSLog(@"%@", question.category);
+                        dispatch_async(mainQueue, ^{
+                            [self.activityIndicatorView stopAnimating];
+                        });
+                    }];
+                });
             }];
         }];
 }

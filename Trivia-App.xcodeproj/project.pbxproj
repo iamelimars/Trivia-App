@@ -169,7 +169,7 @@
 		882A15411DD1868F006A95DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				882DFF6D1DDBBF8200ED8BAB /* Quiz */,
+				882DFF6D1DDBBF8200ED8BAB /* QuizParamaters */,
 				882A15481DD1AE60006A95DA /* Questions */,
 				882A15491DD1AE6A006A95DA /* FetchQuiz */,
 				882A154D1DD1B519006A95DA /* Constants */,
@@ -204,13 +204,13 @@
 			name = Constants;
 			sourceTree = "<group>";
 		};
-		882DFF6D1DDBBF8200ED8BAB /* Quiz */ = {
+		882DFF6D1DDBBF8200ED8BAB /* QuizParamaters */ = {
 			isa = PBXGroup;
 			children = (
 				882DFF6E1DDBBFAC00ED8BAB /* QuizParamaters.h */,
 				882DFF6F1DDBBFAC00ED8BAB /* QuizParamaters.m */,
 			);
-			name = Quiz;
+			name = QuizParamaters;
 			sourceTree = "<group>";
 		};
 		8F28FE5DE504A469781C1C81 /* Frameworks */ = {

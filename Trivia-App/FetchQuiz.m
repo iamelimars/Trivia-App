@@ -20,7 +20,7 @@
         
         if (error) {
             
-            NSLog(@"Error loading Json");
+            NSLog(@"Error loading Json: %@", error.localizedDescription);
             return;
         }
         

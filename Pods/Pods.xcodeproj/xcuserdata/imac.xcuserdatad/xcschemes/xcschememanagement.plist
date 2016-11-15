@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DGActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IGLDropDownMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -14,15 +19,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Trivia-AppTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>DE5B59C98F5397AFD9EAC5E9F6E37235</key>
+		<key>4FC80A244BF06D76B33A4ED978AA852A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F2FC0AF0815B5D127E0AA79352D5EB6A</key>
+		<key>588AB22A5B203E9F88073CB48B27656C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5B4FC20E751C6D6160F11D158B28A984</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FBA9754FB7A82758566D360BD30C2517</key>
 		<dict>
 			<key>primary</key>
 			<true/>

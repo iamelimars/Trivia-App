@@ -11,6 +11,7 @@
 #import "fetchQuiz.h"
 #import "Constants.h"
 #import "IGLDropdownMenu.h"
+#import "DGActivityIndicatorView.h"
 
 @interface ViewController : UIViewController<IGLDropDownMenuDelegate>
 
@@ -23,6 +24,11 @@
 @property (nonatomic, copy) NSArray *difficultyArray;
 @property (nonatomic, strong) IGLDropDownMenu *dropDownMenu;
 @property (nonatomic, strong) IGLDropDownMenu *defaultDropDownMenu;
+
+@property (nonatomic, strong) DGActivityIndicatorView *activityIndicatorView;
+
+@property (weak, nonatomic) IBOutlet UIButton *startQuizButton;
+- (IBAction)startQuizButtonPressed:(id)sender;
 
 @end
 

@@ -1,10 +1,15 @@
 PODS:
+  - DGActivityIndicatorView (2.1.1)
   - IGLDropDownMenu (1.6.2)
 
 DEPENDENCIES:
+  - DGActivityIndicatorView
   - IGLDropDownMenu
 
 SPEC CHECKSUMS:
+  DGActivityIndicatorView: ff2c76073d79692f724863c8dd38685866a03cb6
   IGLDropDownMenu: ae118618ae858fa66ce7c2ac80ed9124a710b228
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 245abe6d053213cb57fe8509c84ccfd205c6fb30
+
+COCOAPODS: 1.1.1

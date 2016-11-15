@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9C6B4157865D8CABB635F513'
+               BlueprintIdentifier = '4FC80A244BF06D76B33A4ED978AA852A'
                BlueprintName = 'Pods-Trivia-App'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-Trivia-App.a'>

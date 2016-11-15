@@ -5,6 +5,7 @@
 
 target 'Trivia-App' do
 pod 'IGLDropDownMenu'
+pod 'DGActivityIndicatorView'
 end
 
 target 'Trivia-AppTests' do

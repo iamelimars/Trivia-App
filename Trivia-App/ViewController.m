@@ -18,10 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSLog(@"%@", [quizCategoryGlobal singleton].categories[0]);
+    
     self.questionsArray = [[NSArray alloc]init];
     
     self.fetchQuiz = [[FetchQuiz alloc]init];
-    
+    self.quizParams = [[QuizParamaters alloc]init];
+    NSLog(@"Number of questions:  %@", self.quizParams.numberOfQuestions);
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
@@ -62,18 +65,39 @@
     
     [self.defaultDropDownMenu reloadView];
 
-    
 }
 
+-(void)categoryDropDown {
+    
+    
+    
+}
 #pragma mark - IGLDropDownMenuDelegate
 
 - (void)dropDownMenu:(IGLDropDownMenu *)dropDownMenu selectedItemAtIndex:(NSInteger)index
 {
     if (self.defaultDropDownMenu) {
-        IGLDropDownItem *item = dropDownMenu.dropDownItems[index];
-        NSLog(@"Selected: %@", item.text);
+        //IGLDropDownItem *item = dropDownMenu.dropDownItems[index];
+        switch (index) {
+            case 0:
+                self.quizParams.difficulty = @"";
+                break;
+            case 1:
+                self.quizParams.difficulty = DIFFICULTY_EASY;
+                break;
+            case 2:
+                self.quizParams.difficulty = DIFFICULTY_MEDIUM;
+                break;
+            case 3:
+                self.quizParams.difficulty = DIFFICULTY_HARD;
+                break;
+            default:
+                break;
+        }
+        
+        NSLog(@"Selected: %@", self.quizParams.difficulty);
     } else {
-        NSLog(@"Selected: ");
+        //NSLog(@"Selected: ");
     }
 }
 

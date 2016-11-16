@@ -12,6 +12,8 @@
 #import "Constants.h"
 #import "IGLDropdownMenu.h"
 #import "DGActivityIndicatorView.h"
+#import "QuizParamaters.h"
+#import "quizCategoryGlobal.h"
 
 @interface ViewController : UIViewController<IGLDropDownMenuDelegate>
 
@@ -19,7 +21,9 @@
 @property (nonatomic) NSURLSession *session;
 @property (nonatomic, weak) NSDictionary *jsonDictionary;
 
+//Custom Classes
 @property (nonatomic) FetchQuiz *fetchQuiz;
+@property (nonatomic, strong) QuizParamaters *quizParams;
 
 @property (nonatomic, copy) NSArray *difficultyArray;
 @property (nonatomic, strong) IGLDropDownMenu *dropDownMenu;

@@ -20,6 +20,7 @@
 		882A15471DD19AC6006A95DA /* FetchQuiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15461DD19AC6006A95DA /* FetchQuiz.m */; };
 		882A154B1DD1AEA1006A95DA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A154A1DD1AEA1006A95DA /* Constants.m */; };
 		882DFF701DDBBFAC00ED8BAB /* QuizParamaters.m in Sources */ = {isa = PBXBuildFile; fileRef = 882DFF6F1DDBBFAC00ED8BAB /* QuizParamaters.m */; };
+		882DFF741DDBDB5000ED8BAB /* quizCategoryGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 882DFF731DDBDB5000ED8BAB /* quizCategoryGlobal.m */; };
 		DD819EC7028B0541352FC720 /* libPods-Trivia-AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F24ADF02D5BC6AB4EE8645D /* libPods-Trivia-AppTests.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,8 @@
 		882A154C1DD1B219006A95DA /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		882DFF6E1DDBBFAC00ED8BAB /* QuizParamaters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizParamaters.h; sourceTree = "<group>"; };
 		882DFF6F1DDBBFAC00ED8BAB /* QuizParamaters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizParamaters.m; sourceTree = "<group>"; };
+		882DFF721DDBDB5000ED8BAB /* quizCategoryGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quizCategoryGlobal.h; sourceTree = "<group>"; };
+		882DFF731DDBDB5000ED8BAB /* quizCategoryGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quizCategoryGlobal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,7 @@
 		882A15411DD1868F006A95DA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				882DFF711DDBDB0500ED8BAB /* Singleton */,
 				882DFF6D1DDBBF8200ED8BAB /* QuizParamaters */,
 				882A15481DD1AE60006A95DA /* Questions */,
 				882A15491DD1AE6A006A95DA /* FetchQuiz */,
@@ -211,6 +215,15 @@
 				882DFF6F1DDBBFAC00ED8BAB /* QuizParamaters.m */,
 			);
 			name = QuizParamaters;
+			sourceTree = "<group>";
+		};
+		882DFF711DDBDB0500ED8BAB /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				882DFF721DDBDB5000ED8BAB /* quizCategoryGlobal.h */,
+				882DFF731DDBDB5000ED8BAB /* quizCategoryGlobal.m */,
+			);
+			name = Singleton;
 			sourceTree = "<group>";
 		};
 		8F28FE5DE504A469781C1C81 /* Frameworks */ = {
@@ -433,6 +446,7 @@
 				882A15251DD183B2006A95DA /* Trivia_App.xcdatamodeld in Sources */,
 				882A154B1DD1AEA1006A95DA /* Constants.m in Sources */,
 				882A15191DD183B2006A95DA /* main.m in Sources */,
+				882DFF741DDBDB5000ED8BAB /* quizCategoryGlobal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

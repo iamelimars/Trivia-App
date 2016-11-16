@@ -10,7 +10,19 @@
 
 @implementation QuizParamaters
 
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+        _numberOfQuestions = @"10";
+        _category = @"";
+        _difficulty = @"";
+        _quizType = @"";
+        
+    }
+    return self;
+}
 
 
 @end

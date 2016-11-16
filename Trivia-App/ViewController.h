@@ -15,7 +15,7 @@
 #import "QuizParamaters.h"
 #import "quizCategoryGlobal.h"
 
-@interface ViewController : UIViewController<IGLDropDownMenuDelegate>
+@interface ViewController : UIViewController<IGLDropDownMenuDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (nonatomic, retain) NSArray *questionsArray;
 @property (nonatomic) NSURLSession *session;
@@ -34,8 +34,15 @@
 
 @property (nonatomic, strong) DGActivityIndicatorView *activityIndicatorView;
 
+@property (nonatomic, strong) UIView *customPickerView;
+@property (nonatomic, strong) UIPickerView *pickerView;
+
 @property (weak, nonatomic) IBOutlet UIButton *startQuizButton;
 - (IBAction)startQuizButtonPressed:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *categoriesButton;
+- (IBAction)categoriesButtonPressed:(id)sender;
+
 
 @end
 

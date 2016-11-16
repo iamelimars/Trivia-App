@@ -35,13 +35,17 @@
                                     <action selector="startQuizButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vg9-ci-rv2"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5J-zB-j4u">
-                                <rect key="frame" x="16" y="77" width="343" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olf-of-YPR">
+                                <rect key="frame" x="16" y="49" width="343" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <color key="backgroundColor" red="0.66902792450000004" green="0.73128575090000003" blue="0.9488992691" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Categories">
+                                    <color key="titleColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="categoriesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AcK-8b-yZp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -51,12 +55,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoriesButton" destination="Olf-of-YPR" id="5cq-hU-Ial"/>
                         <outlet property="startQuizButton" destination="VKh-7E-s45" id="m1y-Hx-QO8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="66"/>
+            <point key="canvasLocation" x="-367.19999999999999" y="1.3493253373313345"/>
         </scene>
     </scenes>
 </document>

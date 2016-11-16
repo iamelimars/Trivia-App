@@ -21,6 +21,10 @@
 		882A154B1DD1AEA1006A95DA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A154A1DD1AEA1006A95DA /* Constants.m */; };
 		882DFF701DDBBFAC00ED8BAB /* QuizParamaters.m in Sources */ = {isa = PBXBuildFile; fileRef = 882DFF6F1DDBBFAC00ED8BAB /* QuizParamaters.m */; };
 		882DFF741DDBDB5000ED8BAB /* quizCategoryGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 882DFF731DDBDB5000ED8BAB /* quizCategoryGlobal.m */; };
+		883FBE2B1DDC02AF00BCA23B /* QuizCategoryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 883FBE291DDC02AF00BCA23B /* QuizCategoryPickerViewController.m */; };
+		883FBE2C1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883FBE2A1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib */; };
+		883FBE301DDC08E600BCA23B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 883FBE2F1DDC08E600BCA23B /* TableViewCell.m */; };
+		883FBE321DDC0C7800BCA23B /* SlideInTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883FBE311DDC0C7800BCA23B /* SlideInTableView.xib */; };
 		DD819EC7028B0541352FC720 /* libPods-Trivia-AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F24ADF02D5BC6AB4EE8645D /* libPods-Trivia-AppTests.a */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +69,12 @@
 		882DFF6F1DDBBFAC00ED8BAB /* QuizParamaters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizParamaters.m; sourceTree = "<group>"; };
 		882DFF721DDBDB5000ED8BAB /* quizCategoryGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = quizCategoryGlobal.h; sourceTree = "<group>"; };
 		882DFF731DDBDB5000ED8BAB /* quizCategoryGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = quizCategoryGlobal.m; sourceTree = "<group>"; };
+		883FBE281DDC02AF00BCA23B /* QuizCategoryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizCategoryPickerViewController.h; sourceTree = "<group>"; };
+		883FBE291DDC02AF00BCA23B /* QuizCategoryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizCategoryPickerViewController.m; sourceTree = "<group>"; };
+		883FBE2A1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizCategoryPickerViewController.xib; sourceTree = "<group>"; };
+		883FBE2E1DDC08E600BCA23B /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		883FBE2F1DDC08E600BCA23B /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		883FBE311DDC0C7800BCA23B /* SlideInTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideInTableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +175,10 @@
 		882A15401DD18688006A95DA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				883FBE2D1DDC08BC00BCA23B /* PickerView */,
+				883FBE2E1DDC08E600BCA23B /* TableViewCell.h */,
+				883FBE2F1DDC08E600BCA23B /* TableViewCell.m */,
+				883FBE311DDC0C7800BCA23B /* SlideInTableView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -224,6 +238,16 @@
 				882DFF731DDBDB5000ED8BAB /* quizCategoryGlobal.m */,
 			);
 			name = Singleton;
+			sourceTree = "<group>";
+		};
+		883FBE2D1DDC08BC00BCA23B /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				883FBE281DDC02AF00BCA23B /* QuizCategoryPickerViewController.h */,
+				883FBE291DDC02AF00BCA23B /* QuizCategoryPickerViewController.m */,
+				883FBE2A1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib */,
+			);
+			name = PickerView;
 			sourceTree = "<group>";
 		};
 		8F28FE5DE504A469781C1C81 /* Frameworks */ = {
@@ -326,7 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				882A152A1DD183B2006A95DA /* LaunchScreen.storyboard in Resources */,
+				883FBE2C1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib in Resources */,
 				882A15271DD183B2006A95DA /* Assets.xcassets in Resources */,
+				883FBE321DDC0C7800BCA23B /* SlideInTableView.xib in Resources */,
 				882A15221DD183B2006A95DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,9 +469,11 @@
 				882A151C1DD183B2006A95DA /* AppDelegate.m in Sources */,
 				882A15441DD186AD006A95DA /* Questions.m in Sources */,
 				882DFF701DDBBFAC00ED8BAB /* QuizParamaters.m in Sources */,
+				883FBE2B1DDC02AF00BCA23B /* QuizCategoryPickerViewController.m in Sources */,
 				882A15251DD183B2006A95DA /* Trivia_App.xcdatamodeld in Sources */,
 				882A154B1DD1AEA1006A95DA /* Constants.m in Sources */,
 				882A15191DD183B2006A95DA /* main.m in Sources */,
+				883FBE301DDC08E600BCA23B /* TableViewCell.m in Sources */,
 				882DFF741DDBDB5000ED8BAB /* quizCategoryGlobal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

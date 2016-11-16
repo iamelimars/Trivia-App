@@ -22,6 +22,7 @@
     
     self.questionsArray = [[NSArray alloc]init];
     
+    
     self.fetchQuiz = [[FetchQuiz alloc]init];
     self.quizParams = [[QuizParamaters alloc]init];
     NSLog(@"Number of questions:  %@", self.quizParams.numberOfQuestions);
@@ -34,6 +35,7 @@
     self.activityIndicatorView.frame = CGRectMake((self.view.frame.size.width / 2) - 25, (self.view.frame.size.height) * .75, 50.0, 50.0);
     
     [self difficultyDropDown];
+    [self categoryDropDown];
     
 }
 
@@ -68,8 +70,28 @@
 }
 
 -(void)categoryDropDown {
+    NSArray *categoriesArr = [[NSMutableArray alloc]init];
+    categoriesArr = [[quizCategoryGlobal singleton] categories];
     
+    NSMutableArray *dropdownItems = [[NSMutableArray alloc] init];
+    for (int i = 0; i < categoriesArr.count; i++) {
+        
+        IGLDropDownItem *item = [[IGLDropDownItem alloc] init];
+        [item setText:categoriesArr[i]];
+        [dropdownItems addObject:item];
+        
+    }
     
+    self.categoriesDropDownMenu = [[IGLDropDownMenu alloc]init];
+    self.categoriesDropDownMenu.menuText = @"Category";
+    self.categoriesDropDownMenu.dropDownItems = dropdownItems;
+    self.categoriesDropDownMenu.paddingLeft = 15;
+    [self.categoriesDropDownMenu setFrame:CGRectMake(8, 200, self.view.frame.size.width - 16, 45)];
+    self.categoriesDropDownMenu.delegate = self;
+    
+    [self.view addSubview:self.categoriesDropDownMenu];
+    
+    [self.categoriesDropDownMenu reloadView];
     
 }
 #pragma mark - IGLDropDownMenuDelegate

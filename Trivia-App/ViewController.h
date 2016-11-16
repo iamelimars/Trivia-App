@@ -26,6 +26,9 @@
 @property (nonatomic, strong) QuizParamaters *quizParams;
 
 @property (nonatomic, copy) NSArray *difficultyArray;
+@property (nonatomic, copy) NSArray *categoriesArray;
+
+@property (nonatomic, strong) IGLDropDownMenu *categoriesDropDownMenu;
 @property (nonatomic, strong) IGLDropDownMenu *dropDownMenu;
 @property (nonatomic, strong) IGLDropDownMenu *defaultDropDownMenu;
 

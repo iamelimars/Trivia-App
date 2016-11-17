@@ -24,5 +24,20 @@
     return self;
 }
 
+//Custom Initializer
+-(instancetype)initWithNumberOfQuestions:(NSString *)numOfQuestions category:(NSString *)category difficulty:(NSString *)difficulty quizType:(NSString *)quizType
+{
+    self = [super init];
+    if (self) {
+        
+        _numberOfQuestions = numOfQuestions;
+        _category = category;
+        _difficulty = difficulty;
+        _quizType = quizType;
+        
+    }
+    
+    return self;
+}
 
 @end

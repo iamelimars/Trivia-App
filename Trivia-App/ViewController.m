@@ -75,6 +75,7 @@
 
 -(void)presentCustomPickerView {
     
+    //Toolbar that goes on top of uipickerview
     UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     [toolBar setBarStyle:UIBarStyleBlack];
     toolBar.barTintColor = [UIColor colorWithRed:227/255.0 green:90/255.0 blue:102/255.0 alpha:1.0];
@@ -84,22 +85,25 @@
     toolBar.items = @[barButtonDone];
     barButtonDone.tintColor = [UIColor whiteColor];
     
-    
+    //Picker View initialization
     customPickerView = [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, 0)];
     pickerView = [[UIPickerView alloc]initWithFrame:CGRectMake(0, 0, customPickerView.frame.size.width, customPickerView.frame.size.height)];
+    
+    //Picker View set up
     [pickerView setDelegate:self];
     [pickerView setDataSource:self];
     pickerView.showsSelectionIndicator = YES;
     [pickerView selectRow:2 inComponent:0 animated:YES];
-    
-    [customPickerView addSubview:toolBar];
-    [customPickerView addSubview:pickerView];
     pickerView.tintColor = [UIColor whiteColor];
     
-    
     customPickerView.backgroundColor = [UIColor colorWithRed:227/255.0 green:90/255.0 blue:102/255.0 alpha:1.0];
+    
+    //Adding toolbar and pickerview to custompickerview
+    [customPickerView addSubview:toolBar];
+    [customPickerView addSubview:pickerView];
     [self.view addSubview:customPickerView];
     
+    //Animation for custom picker view
     [UIView transitionWithView:customPickerView duration:1.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
         
         customPickerView.frame = CGRectMake(0, self.view.frame.size.height * .60, self.view.frame.size.width, self.view.frame.size.height * .40);
@@ -112,6 +116,8 @@
     
 }
 
+
+//Picker View for Quiz params
 -(void)hideCustomPickerView {
     
     [UIView transitionWithView:customPickerView duration:1.0 options:UIViewAnimationOptionCurveEaseIn animations:^{
@@ -194,15 +200,15 @@
 
 - (IBAction)startQuizButtonPressed:(id)sender {
     
+    
     [self.view bringSubviewToFront:self.startQuizButton];
-    
-    //Start animation
-    
     [self.startQuizButton addSubview:self.activityIndicatorView];
     
+    //Creating Queues
     dispatch_queue_t mainQueue = dispatch_get_main_queue();
     dispatch_queue_t jsonQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
+        //Animations for quiz button
         [UIView transitionWithView:self.startQuizButton duration:1 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
             
             [self.startQuizButton setTitle:@"Generating Quiz" forState:UIControlStateNormal];
@@ -220,7 +226,6 @@
                 
                 //Fetching Quiz
                 dispatch_async(jsonQueue, ^{
-                    
                     [self.fetchQuiz fetchFeedwithAmount:12 category:9 difficulty:DIFFICULTY_MEDIUM questionType:QUIZ_TYPE_MULTIPLE session:self.session completion:^(NSDictionary *responseDict) {
                         self.questionsArray = [self.fetchQuiz parseJsonWithDictionary:responseDict];
                         Questions *question = [[Questions alloc]init];
@@ -234,6 +239,7 @@
             }];
         }];
 }
+
 - (IBAction)categoriesButtonPressed:(id)sender {
     
     [self presentCustomPickerView];

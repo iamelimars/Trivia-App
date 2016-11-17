@@ -15,4 +15,6 @@
 @property (nonatomic) NSString *difficulty;
 @property (nonatomic) NSString *quizType; //Multiple Choice or True/False
 
+-(instancetype)initWithNumberOfQuestions:(NSString *)numOfQuestions category:(NSString *)category difficulty:(NSString *)difficulty quizType:(NSString *)quizType;
+
 @end

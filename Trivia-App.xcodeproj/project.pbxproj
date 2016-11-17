@@ -25,6 +25,9 @@
 		883FBE2C1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883FBE2A1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib */; };
 		883FBE301DDC08E600BCA23B /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 883FBE2F1DDC08E600BCA23B /* TableViewCell.m */; };
 		883FBE321DDC0C7800BCA23B /* SlideInTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 883FBE311DDC0C7800BCA23B /* SlideInTableView.xib */; };
+		88A37C241DDD40E300CD4DEE /* FetchQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A37C231DDD40E300CD4DEE /* FetchQuizTests.m */; };
+		88A37C271DDD465E00CD4DEE /* QuizParamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A37C261DDD465E00CD4DEE /* QuizParamsTests.m */; };
+		88A37C291DDD525B00CD4DEE /* QuizCategoryGlobalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A37C281DDD525B00CD4DEE /* QuizCategoryGlobalTests.m */; };
 		DD819EC7028B0541352FC720 /* libPods-Trivia-AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F24ADF02D5BC6AB4EE8645D /* libPods-Trivia-AppTests.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		883FBE2E1DDC08E600BCA23B /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		883FBE2F1DDC08E600BCA23B /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		883FBE311DDC0C7800BCA23B /* SlideInTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SlideInTableView.xib; sourceTree = "<group>"; };
+		88A37C231DDD40E300CD4DEE /* FetchQuizTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchQuizTests.m; sourceTree = "<group>"; };
+		88A37C261DDD465E00CD4DEE /* QuizParamsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizParamsTests.m; sourceTree = "<group>"; };
+		88A37C281DDD525B00CD4DEE /* QuizCategoryGlobalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizCategoryGlobalTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 			children = (
 				882A151A1DD183B2006A95DA /* AppDelegate.h */,
 				882A151B1DD183B2006A95DA /* AppDelegate.m */,
+				88A37C251DDD41E600CD4DEE /* Categories */,
 				882A15411DD1868F006A95DA /* Model */,
 				882A15401DD18688006A95DA /* View */,
 				882A153F1DD18680006A95DA /* Controller */,
@@ -158,6 +165,9 @@
 			isa = PBXGroup;
 			children = (
 				882A15341DD183B3006A95DA /* Trivia_AppTests.m */,
+				88A37C231DDD40E300CD4DEE /* FetchQuizTests.m */,
+				88A37C261DDD465E00CD4DEE /* QuizParamsTests.m */,
+				88A37C281DDD525B00CD4DEE /* QuizCategoryGlobalTests.m */,
 				882A15361DD183B3006A95DA /* Info.plist */,
 			);
 			path = "Trivia-AppTests";
@@ -248,6 +258,13 @@
 				883FBE2A1DDC02AF00BCA23B /* QuizCategoryPickerViewController.xib */,
 			);
 			name = PickerView;
+			sourceTree = "<group>";
+		};
+		88A37C251DDD41E600CD4DEE /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		8F28FE5DE504A469781C1C81 /* Frameworks */ = {
@@ -483,6 +500,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				882A15351DD183B3006A95DA /* Trivia_AppTests.m in Sources */,
+				88A37C241DDD40E300CD4DEE /* FetchQuizTests.m in Sources */,
+				88A37C271DDD465E00CD4DEE /* QuizParamsTests.m in Sources */,
+				88A37C291DDD525B00CD4DEE /* QuizCategoryGlobalTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,10 @@
 #import "DGActivityIndicatorView.h"
 #import "QuizParamaters.h"
 #import "quizCategoryGlobal.h"
+#import "MZFormSheetPresentationViewController.h"
+#import "MZFormSheetPresentationViewControllerSegue.h"
+#import "SettingsViewController.h"
+
 
 @interface ViewController : UIViewController<IGLDropDownMenuDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -36,12 +40,33 @@
 
 @property (nonatomic, strong) UIView *customPickerView;
 @property (nonatomic, strong) UIPickerView *pickerView;
-
+//StartQuizButton
 @property (weak, nonatomic) IBOutlet UIButton *startQuizButton;
 - (IBAction)startQuizButtonPressed:(id)sender;
 
+//CategoriesButton
 @property (weak, nonatomic) IBOutlet UIButton *categoriesButton;
 - (IBAction)categoriesButtonPressed:(id)sender;
+
+//NumberOfQuestionsButton
+@property (weak, nonatomic) IBOutlet UIView *numberOfQuestionsView;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfQuestionsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberOfQuestionsNumberLabel;
+@property (weak, nonatomic) IBOutlet UIButton *numbersAddButton;
+- (IBAction)numbersAddButtonPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *numbersSubtractButton;
+- (IBAction)numbersSubtractButtonPressed:(id)sender;
+@property (nonatomic) int number;
+
+
+//DifficultyButton
+@property (weak, nonatomic) IBOutlet UIButton *difficultyButton;
+- (IBAction)difficultyButtonPressed:(id)sender;
+
+//QuizTypeButton
+@property (weak, nonatomic) IBOutlet UIButton *quizTypeButton;
+- (IBAction)quizTypeButtonPressed:(id)sender;
+
 
 
 @end

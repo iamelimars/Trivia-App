@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MZAppearance.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MZFormSheetPresentationController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Trivia-App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4FC80A244BF06D76B33A4ED978AA852A</key>
+		<key>3814077B60A225441E135CD435F07186</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>588AB22A5B203E9F88073CB48B27656C</key>
+		<key>3CB17C6B6D5F08F6B3350CCEC6B1E0F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5B4FC20E751C6D6160F11D158B28A984</key>
+		<key>70D462634F7BD6635A7C8AC01780C67F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBA9754FB7A82758566D360BD30C2517</key>
+		<key>95D6772781BC7E573D2A59497D7761D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6D919C418DD35E10C5CCC6F394C2729</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC406CCF1049DF297208C4BBD7C84B8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -26,10 +26,14 @@
     
     self.questionsArray = [[NSArray alloc]init];
     
+    self.title = @"Trivia Paramaters";
     
     self.fetchQuiz = [[FetchQuiz alloc]init];
     self.quizParams = [[QuizParamaters alloc]init];
     NSLog(@"Number of questions:  %@", self.quizParams.numberOfQuestions);
+    
+    self.numberOfQuestionsNumberLabel.text = self.quizParams.numberOfQuestions;
+    self.number = 10;
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
@@ -243,6 +247,46 @@
 - (IBAction)categoriesButtonPressed:(id)sender {
     
     [self presentCustomPickerView];
+    
+}
+
+- (IBAction)difficultyButtonPressed:(id)sender {
+    
+    
+    
+}
+- (IBAction)quizTypeButtonPressed:(id)sender {
+    
+    
+    
+}
+- (IBAction)numbersAddButtonPressed:(id)sender {
+    
+    if (self.number < 25) {
+        
+        self.number = self.number+1;
+        self.quizParams.numberOfQuestions = [NSString stringWithFormat:@"%i", self.number];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.numberOfQuestionsNumberLabel.text = [NSString stringWithFormat:@"%i", self.number];
+        });
+        
+    }
+    
+}
+- (IBAction)numbersSubtractButtonPressed:(id)sender {
+    if (self.number > 5) {
+        
+        self.number = self.number-1;
+        self.quizParams.numberOfQuestions = [NSString stringWithFormat:@"%i", self.number];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.numberOfQuestionsNumberLabel.text = [NSString stringWithFormat:@"%i", self.number];
+        });
+        
+    }
+    
+    
     
 }
 @end

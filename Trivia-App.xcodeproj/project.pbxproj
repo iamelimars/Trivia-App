@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05DBB419CB5434C582F9CC4E /* libPods-Trivia-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E19E390D74304F5598FEFF4 /* libPods-Trivia-App.a */; };
+		0D1E7FF8507BC9588E63619B /* Pods_Trivia_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24B91D5AF62A753E33188A78 /* Pods_Trivia_AppTests.framework */; };
+		4E0B9BBB95D99B27702CEFE0 /* Pods_Trivia_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31AEB724BB7DBBD8907280E /* Pods_Trivia_App.framework */; };
 		882A15191DD183B2006A95DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A15181DD183B2006A95DA /* main.m */; };
 		882A151C1DD183B2006A95DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A151B1DD183B2006A95DA /* AppDelegate.m */; };
 		882A151F1DD183B2006A95DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A151E1DD183B2006A95DA /* ViewController.m */; };
@@ -28,7 +29,7 @@
 		88A37C241DDD40E300CD4DEE /* FetchQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A37C231DDD40E300CD4DEE /* FetchQuizTests.m */; };
 		88A37C271DDD465E00CD4DEE /* QuizParamsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A37C261DDD465E00CD4DEE /* QuizParamsTests.m */; };
 		88A37C291DDD525B00CD4DEE /* QuizCategoryGlobalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A37C281DDD525B00CD4DEE /* QuizCategoryGlobalTests.m */; };
-		DD819EC7028B0541352FC720 /* libPods-Trivia-AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F24ADF02D5BC6AB4EE8645D /* libPods-Trivia-AppTests.a */; };
+		88D02E0E1DDFFFB000975D4A /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D02E0D1DDFFFB000975D4A /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +44,10 @@
 
 /* Begin PBXFileReference section */
 		11F1557C703F25D52361ED7E /* Pods-Trivia-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trivia-App/Pods-Trivia-App.debug.xcconfig"; sourceTree = "<group>"; };
-		1E19E390D74304F5598FEFF4 /* libPods-Trivia-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Trivia-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24B91D5AF62A753E33188A78 /* Pods_Trivia_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trivia_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39671DC470D88DBD8D214615 /* Pods-Trivia-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia-AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trivia-AppTests/Pods-Trivia-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5AA621AEC32A718EA3C13F03 /* Pods-Trivia-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trivia-App/Pods-Trivia-App.release.xcconfig"; sourceTree = "<group>"; };
 		5C9FA79F17F4FF03E7168AA5 /* Pods-Trivia-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia-AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Trivia-AppTests/Pods-Trivia-AppTests.release.xcconfig"; sourceTree = "<group>"; };
-		5F24ADF02D5BC6AB4EE8645D /* libPods-Trivia-AppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Trivia-AppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		882A15141DD183B2006A95DA /* Trivia-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trivia-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		882A15181DD183B2006A95DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		882A151A1DD183B2006A95DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -81,6 +81,9 @@
 		88A37C231DDD40E300CD4DEE /* FetchQuizTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchQuizTests.m; sourceTree = "<group>"; };
 		88A37C261DDD465E00CD4DEE /* QuizParamsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizParamsTests.m; sourceTree = "<group>"; };
 		88A37C281DDD525B00CD4DEE /* QuizCategoryGlobalTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizCategoryGlobalTests.m; sourceTree = "<group>"; };
+		88D02E0C1DDFFFB000975D4A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		88D02E0D1DDFFFB000975D4A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		A31AEB724BB7DBBD8907280E /* Pods_Trivia_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trivia_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05DBB419CB5434C582F9CC4E /* libPods-Trivia-App.a in Frameworks */,
+				4E0B9BBB95D99B27702CEFE0 /* Pods_Trivia_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD819EC7028B0541352FC720 /* libPods-Trivia-AppTests.a in Frameworks */,
+				0D1E7FF8507BC9588E63619B /* Pods_Trivia_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +179,9 @@
 		882A153F1DD18680006A95DA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				882A151D1DD183B2006A95DA /* ViewController.h */,
-				882A151E1DD183B2006A95DA /* ViewController.m */,
+				88D02E0B1DDFFF3300975D4A /* QuizParamsVC */,
+				88D02E0C1DDFFFB000975D4A /* SettingsViewController.h */,
+				88D02E0D1DDFFFB000975D4A /* SettingsViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -267,11 +271,20 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		88D02E0B1DDFFF3300975D4A /* QuizParamsVC */ = {
+			isa = PBXGroup;
+			children = (
+				882A151D1DD183B2006A95DA /* ViewController.h */,
+				882A151E1DD183B2006A95DA /* ViewController.m */,
+			);
+			name = QuizParamsVC;
+			sourceTree = "<group>";
+		};
 		8F28FE5DE504A469781C1C81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E19E390D74304F5598FEFF4 /* libPods-Trivia-App.a */,
-				5F24ADF02D5BC6AB4EE8645D /* libPods-Trivia-AppTests.a */,
+				A31AEB724BB7DBBD8907280E /* Pods_Trivia_App.framework */,
+				24B91D5AF62A753E33188A78 /* Pods_Trivia_AppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -484,6 +497,7 @@
 				882A151F1DD183B2006A95DA /* ViewController.m in Sources */,
 				882A15471DD19AC6006A95DA /* FetchQuiz.m in Sources */,
 				882A151C1DD183B2006A95DA /* AppDelegate.m in Sources */,
+				88D02E0E1DDFFFB000975D4A /* SettingsViewController.m in Sources */,
 				882A15441DD186AD006A95DA /* Questions.m in Sources */,
 				882DFF701DDBBFAC00ED8BAB /* QuizParamaters.m in Sources */,
 				883FBE2B1DDC02AF00BCA23B /* QuizCategoryPickerViewController.m in Sources */,
